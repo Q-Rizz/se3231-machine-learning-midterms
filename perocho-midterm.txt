@@ -1,0 +1,16 @@
+
+
+1. Does preprocessing affect the model’s results? Why?
+- Yes, preprocessing really makes a difference. When you scale features like Price and Landsize with something like Standard Scaler, 
+it stops the bigger numbers from overpowering everything else during clustering. 
+Also, filling in missing data with SimpleImputer helps keep the dataset whole, 
+so the model doesn’t lose any important info or mess up the distance calculations. 
+Without doing this, the clusters could end up biased or just plain wrong because some features would dominate and missing data would cause problems.
+
+
+2. What do you conclude from the model’s results?
+- The model showed that there are basically four different groups in the Melbourne housing market, which we figured out using the 
+elbow method. It did a good job separating properties based on things like price, size, and location. So, you can see the market 
+isn’t all the same, it’s made up of different types of homes, which is useful if you want to understand or target specific segments.
+
+
